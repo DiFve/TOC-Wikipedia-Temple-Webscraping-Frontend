@@ -101,7 +101,7 @@ export default {
 
     this.allList = res.data.result;
 
-    console.log(this.allList);
+    //console.log(this.allList);
   },
 
   methods: {
@@ -121,7 +121,7 @@ export default {
       const csvContent = this.jsonToCsv(this.allList);
       const link = document.createElement("a");
       link.setAttribute("href", csvContent);
-      link.setAttribute("download", "example.csv");
+      link.setAttribute("download", "รายชื่อวัดทั้งหมด.csv");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
