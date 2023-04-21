@@ -71,8 +71,6 @@
 </template>
 
 <script>
-// import stringify from "csv-stringify";
-
 import Wat from "../assets/Wat.jpeg";
 import Buengkan from "../assets/Buengkan.jpeg";
 import Loei from "../assets/Loei.jpeg";
@@ -96,12 +94,10 @@ export default {
     };
   },
 
-  async mounted() {
-    const res = await axios.get(`${config.apiURL}`);
-
-    this.allList = res.data.result;
-
-    //console.log(this.allList);
+  async created() {
+    await this.$store.dispatch("fetchData");
+    // console.log(this.$store.state.allList);
+    this.allList = this.$store.state.allList;
   },
 
   methods: {

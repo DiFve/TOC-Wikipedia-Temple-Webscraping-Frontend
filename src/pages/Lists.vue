@@ -71,9 +71,11 @@ import config from "../../config.json";
 
 export default {
   async mounted() {
-    const res = await axios.get(`${config.apiURL}`);
+    // const res = await axios.get(`${config.apiURL}`);
+    // this.allTempleList = res.data.result;
+    // console.log(this.$allList);
 
-    this.allTempleList = res.data.result;
+    this.allTempleList = this.$store.state.allList;
   },
 
   computed: {
