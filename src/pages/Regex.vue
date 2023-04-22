@@ -36,7 +36,7 @@
 
       <div class="mt-12 ml-12">
         <div class="text-3xl text-text font-semibold">
-          ลิงค์ Source code (Frontend)
+          ลิงค์ Source code (Backend)
         </div>
         <a
           class="text-white mt-2"
