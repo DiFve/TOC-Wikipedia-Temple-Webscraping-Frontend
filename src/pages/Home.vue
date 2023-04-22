@@ -103,8 +103,11 @@ export default {
   methods: {
     jsonToCsv(json) {
       const headers = Object.keys(json);
-      const rows = json[headers[0]].map((_, i) =>
-        headers.map((header) => json[header][i])
+      const maxLength = Math.max(
+        ...headers.map((header) => json[header].length)
+      );
+      const rows = Array.from({ length: maxLength }, (_, i) =>
+        headers.map((header) => json[header][i] || "")
       );
       const csvContent =
         "data:text/csv;charset=utf-8,\uFEFF" +
