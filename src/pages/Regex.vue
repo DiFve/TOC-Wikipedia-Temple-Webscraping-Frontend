@@ -24,6 +24,30 @@
 
       <div class="mt-12 ml-12">
         <div class="text-3xl text-text font-semibold">
+          ลิงค์ Source code (Frontend)
+        </div>
+        <a
+          class="text-white mt-2"
+          href="https://github.com/DiFve/TOC-Wikipedia-Temple-Webscraping-Frontend"
+        >
+          https://github.com/DiFve/TOC-Wikipedia-Temple-Webscraping-Frontend
+        </a>
+      </div>
+
+      <div class="mt-12 ml-12">
+        <div class="text-3xl text-text font-semibold">
+          ลิงค์ Source code (Frontend)
+        </div>
+        <a
+          class="text-white mt-2"
+          href="https://github.com/DiFve/TOC-Wikipedia-Temple-Webscraping-Backend"
+        >
+          https://github.com/DiFve/TOC-Wikipedia-Temple-Webscraping-Backend
+        </a>
+      </div>
+
+      <div class="mt-12 ml-12">
+        <div class="text-3xl text-text font-semibold">
           Regular expression คืออะไร
         </div>
         <div class="text-white mt-2">
